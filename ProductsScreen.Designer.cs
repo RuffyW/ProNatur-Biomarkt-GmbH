@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductScreen));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxProductName = new System.Windows.Forms.TextBox();
@@ -57,13 +58,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // textBoxProduktName
+            // textBoxProductName
             // 
             this.textBoxProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.textBoxProductName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxProductName.ForeColor = System.Drawing.SystemColors.Window;
             this.textBoxProductName.Location = new System.Drawing.Point(80, 13);
-            this.textBoxProductName.Name = "textBoxProduktName";
+            this.textBoxProductName.Name = "textBoxProductName";
             this.textBoxProductName.Size = new System.Drawing.Size(255, 20);
             this.textBoxProductName.TabIndex = 1;
             // 
@@ -123,7 +124,7 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Preis";
             // 
-            // comboBoxProductCategorie
+            // comboBoxProductCategory
             // 
             this.comboBoxProductCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.comboBoxProductCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,7 +138,7 @@
             "Drogerie",
             "Getränke"});
             this.comboBoxProductCategory.Location = new System.Drawing.Point(80, 65);
-            this.comboBoxProductCategory.Name = "comboBoxProductCategorie";
+            this.comboBoxProductCategory.Name = "comboBoxProductCategory";
             this.comboBoxProductCategory.Size = new System.Drawing.Size(203, 21);
             this.comboBoxProductCategory.TabIndex = 8;
             // 
@@ -202,12 +203,21 @@
             this.productsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productsDGV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.productsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productsDGV.Location = new System.Drawing.Point(16, 162);
             this.productsDGV.MultiSelect = false;
             this.productsDGV.Name = "productsDGV";
             this.productsDGV.ReadOnly = true;
             this.productsDGV.RowHeadersVisible = false;
+            this.productsDGV.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.productsDGV.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.productsDGV.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.productsDGV.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));

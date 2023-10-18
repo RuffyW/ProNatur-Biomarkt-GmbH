@@ -40,11 +40,15 @@ namespace ProNatur_Biomarkt_GmbH
                 //Finished Loading show Mainmenuscreen
                 MainMenuScreen mainMenuScreen = new MainMenuScreen();
                 mainMenuScreen.Show();
+                
+
+                
 
                 this.Hide();
             }
+            
         }
 
-       
+        
     }
 }

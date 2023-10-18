@@ -22,7 +22,17 @@ namespace ProNatur_Biomarkt_GmbH
             ProductScreen productsScreen = new ProductScreen();
             productsScreen.Show();
 
-            this.Hide();
+            
+
+            
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            BillScreen billScreen = new BillScreen();
+            billScreen.Show();
+
+            
         }
     }
 }

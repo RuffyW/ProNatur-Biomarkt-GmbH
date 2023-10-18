@@ -98,6 +98,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Loadingscreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProNatur-Biomarkt GmbH";
             this.Load += new System.EventHandler(this.Loadingscreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
